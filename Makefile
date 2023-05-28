@@ -3,7 +3,7 @@ HEADERS = $(wildcard kernel/*.h drivers/*.h cpu/*.h libc/*.h)
 # Nice syntax for file extension replacement
 OBJ = ${C_SOURCES:.c=.o cpu/interrupt.o} 
 
-# Change this if your cross-compiler is somewhere else
+# Replace these with proper cross compiler locations (i386)
 CC = REPLACE_WITH_CROSSCOMPILER_LOCATION
 GDB = REPLACE_WITH_DEBUG_LOCATION
 # -g: Use debugging symbols in gcc
