@@ -4,8 +4,8 @@ HEADERS = $(wildcard kernel/*.h drivers/*.h cpu/*.h libc/*.h)
 OBJ = ${C_SOURCES:.c=.o cpu/interrupt.o} 
 
 # Change this if your cross-compiler is somewhere else
-CC = /usr/local/Cellar/i386-elf-gcc/11.2.0_1/bin/i386-elf-gcc
-GDB = /usr/local/Cellar/i386-elf-gdb/10.2_2/bin/i386-elf-gdb
+CC = REPLACE_WITH_CROSSCOMPILER_LOCATION
+GDB = REPLACE_WITH_DEBUG_LOCATION
 # -g: Use debugging symbols in gcc
 CFLAGS = -g -m32 -nostdlib -nostdinc -fno-builtin -fno-stack-protector -nostartfiles -nodefaultlibs \
 		 -Wall -Wextra -Werror
